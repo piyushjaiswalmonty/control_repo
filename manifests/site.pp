@@ -3,7 +3,7 @@ node default {
 
 node 'india_smsfw_stp01' {
   include role::master_server
-  file {'/root/README' :
+  file {'/root/README':
     ensure ==> file,
     content ==> $fqdn,
   }
